@@ -1,0 +1,2 @@
+rootProject.name='ppe_market'
+include ':app'

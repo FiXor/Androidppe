@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="80dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            android:inputType="text"
+            android:textColor="@color/textColor" />
+
+
+        <EditText
+            android:id="@+id/courriel"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="Pseudo"
+            android:inputType="text"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/mot_de_passe"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/confirmeMotDePasse"
+                android:hint="Confirmation"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/telephone"
+            android:hint="Telephone"
+            android:inputType="text"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/date_naissance"
+            android:hint="Date de naissance"
+            android:inputType="date"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_regist"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Register"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+         android:layout_height="55dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
